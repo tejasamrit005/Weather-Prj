@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Weather.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+
+<div class="container">
+    
+    <div class="logo">weathra</div>
+    <hr>
+
+    <div class="weather-card">
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                placeholder="Enter city name"
+                id="cityInput"
+            >
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <h2 id="cityName">City</h2>
+        <p class="date" id="currentDate">Today</p>
+
+        <div class="temp-section">
+            <div class="temperature">
+                <span id="temp">--</span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+        </div>
+
+        <p class="description" id="description">Search for a city</p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="icon">💧</div>
+                <div>
+                    <p class="label">Humidity</p>
+                    <p class="value" id="humidity">--%</p>
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="icon">💨</div>
+                <div>
+                    <p class="label">Wind</p>
+                    <p class="value" id="wind">-- km/h</p>
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="icon">🌡️</div>
+                <div>
+                    <p class="label">Feels Like</p>
+                    <p class="value" id="feelsLike">--°C</p>
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="icon">👁️</div>
+                <div>
+                    <p class="label">Visibility</p>
+                    <p class="value" id="visibility">-- km</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>made by team BHAJPA</p>
+    </div>
+
+</div>
+
+<script src="Weather.js"></script>
+</body>
+</html>
